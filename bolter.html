@@ -7,25 +7,101 @@
     <!-- Load external CSS styles -->
     <link rel="stylesheet" href="styles.css">
     
-    
-    <style>
+   <style>
         body {
-    background-color: rgb(245,245,245);
-}
+            background-color: rgb(245, 245, 245);
+        }
+
+        .header {
+            background-color: rgb(211, 211, 211);
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .footer {
+            background-color: rgb(211, 211, 211);
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .image {
+            flex: 1;
+            text-align: right;
+        }
 
         h1 {
             font-size: 30px;
         }
+
         h2 {
-            font-size: 20px; 
+            font-size: 20px;
         }
+
         li {
-            font-size: 15px; 
+            font-size: 15px;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 10px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: rgb(0, 116, 217);
+            color: rgb(255, 255, 255);
+            transition: background-color 0.3s;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button {
+            background-color: rgb(0, 116, 217);
+            color:rgb(255, 255, 255) ;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+
+        .button:hover {
+            background-color: rgb(0, 86, 179);
+        }
+
+        .button:active {
+            background-color: rgb(0, 52, 120);
         }
     </style>
 </head>
 <body>
-    <h1>Дальнобійне озброєння Астартес</h1>
+    <div class="header">
+        <h1>Дальнобійна зброя</h1>
+    </div>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoMVvhPx6HWDJrdXEMbziX7iJllp8NMhrsPw&usqp=CAU" alt=>
     <h2><p>Найпопулярніша зброя космодесанту - болтер. Ця реактивна зброя стріляє снарядами, які розганяються в польоті. Завдяки вбудованому двигуну, снаряди набирають швидкість і завдають колосального збитку при попаданні. Болтер має магазин на 30 снарядів і може стріляти короткими чергами до 4 разів. Виробляється він Міро-Кузницею та Орденами космодесанту. <p>Він має численні переваги перед іншим озброєнням, включаючи невелику кількість вибухової речовини та низьку віддачу. Його гладковствольна конструкція робить віддачу м'якою, а вмонтований двигун забезпечує стабільність снарядів. Проте, для його ефективного використання потрібна вправність і досвід. <p><p>Болтери — гнучка зброя, яку можна модифікувати для будь-якого тактичного завдання. При додаванні прицілу M40 і безшумних набоїв типу Сталкер, болтер навіть може бути використаний як снайперська зброя.
 
@@ -88,11 +164,11 @@
 
 </body>
 <body>
-    <h1></h1>
-    <ul>
-        <li><a href="index.html">Головна сторінка</a></li>
-        
-    </ul>
+    <div class="footer">
+        <a class="button" href="menu.html">
+            Головна
+        </a>
+    </div>   
 </body>
 </html>
 
